@@ -1,0 +1,28 @@
+[J]Spoopy Diary from chapel
+[J]Weird card
+[M]Scroll of foxes cunning
+[J]Some weird books
+[J]Manacles
+[A]Vials of antitoxin
+[J]Nametag
+[J]Sandrows Journal
+[E]Bag
+[W]Shortsword 1d6
+[J]Diary
+[E]Leather Armour
+[G]20 alchemy gp
+[E]Backpack
+[G]432 gp
+[J]Zandalas Artwork
+[E]Thieves tools
+[J]Carved wooden knight
+[W]Trident 1d8
+[J]Silver necklace w5gp
+[W]Tattermans razor 1d4+1
+[S]HP 19
+[A]Potion of healing d8+1
+[W]Light Crossbow 1d8+1
+[A]Opium *2
+[J]Keyring from dream monster
+[A]Oil of belladonna
+[M]Scroll of paralysis
