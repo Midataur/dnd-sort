@@ -25,8 +25,8 @@ stat = ['STATS AND STATUSES:\n'] #[S]
 gold = ['GOLD/TRADE CREDIT:\n'] #[G]
 equip = ['EQUIPMENT:\n'] #[E]
 alch = ['ALCHEMY:\n'] #[A]
-magic = ['MAGIC/SPELLS:\n'] #[M]
-junk = ['JUNK/MISC:\n'] #[J]
+magic = ['MAGIC:\n'] #[M]
+junk = ['JUNK:\n'] #[J]
 
 categories = [['S',stat],['G',gold],['W',weap,weap_sort],['E',equip],['A',alch],['M',magic],['J',junk]]
 charfile = open(filename).readlines()

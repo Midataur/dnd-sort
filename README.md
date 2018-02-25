@@ -21,5 +21,5 @@ label with [?] at the start of the line where ? is the letter of the item's cate
 * Gold/Trade credit [G]
 * Equipment [E]
 * Alchemy [A]
-* Magic/Spells [M]
-* Junk/Misc [J]
+* Magic [M]
+* Junk [J]
