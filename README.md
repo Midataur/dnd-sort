@@ -16,9 +16,9 @@ label with [?] at the start of the line where ? is the letter of the item's cate
 
 ### Valid categories:
 
-* Weapons [W]
+* Weapons/Damage [W]
 * Stats and statuses [S]
-* Gold/trade credit [G]
+* Gold/Trade credit [G]
 * Equipment [E]
 * Alchemy [A]
 * Magic [M]

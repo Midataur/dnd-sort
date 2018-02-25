@@ -20,7 +20,7 @@ def weap_sort(weapons):
 filename = 'demo.txt' #Replace this with your char file 
 
 #Categories
-weap = ['WEAPONS:\n'] #[W]
+weap = ['WEAPONS/DAMAGE:\n'] #[W]
 stat = ['STATS AND STATUSES:\n'] #[S]
 gold = ['GOLD/TRADE CREDIT:\n'] #[G]
 equip = ['EQUIPMENT:\n'] #[E]
