@@ -34,7 +34,6 @@ def gold_sort(gold):
         else:
             gold[x] = [None,gold[x]]
     gold = sorted(gold)[::-1]
-    print gold
     for x in range(len(gold)):
         gold[x] = gold[x][1]
     return gold
