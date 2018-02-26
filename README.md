@@ -12,7 +12,7 @@
 ### Usage:
 
 Replace demo.txt with your inventory filename (make sure they're in the same folder). Put each item on a new line and
-label with [?] at the start of the line where ? is the letter of the item's category. Weapons will sort by damage if formula is given. Formulas should look like '2d4+1' where the initial number before the d and the trailing addition are optional.
+label with [?] at the start of the line where ? is the letter of the item's category.
 
 ### Valid categories:
 
@@ -23,3 +23,8 @@ label with [?] at the start of the line where ? is the letter of the item's cate
 * Alchemy [A]
 * Magic/Spells [M]
 * Junk/Misc [J]
+
+#### Special sorts:
+
+* Weapons will sort by damage if formula is given. Formulas should look like '2d4+1' where the initial number before the d and the trailing addition are optional.
+* Gold and valuable items will sort by value if values are given in the format '423gp 56sp 2cp' where the p is optional. Supported currency types are cp (copper), sp (silver), ep (electrum), gp (gold) and pp (platinum). Exchange rates are dnd5e by default. 
