@@ -6,6 +6,7 @@
 [A]Vials of antitoxin
 [J]Nametag
 [J]Sandrows Journal
+[M]Burning hands (Lv2)
 [E]Bag
 [W]Shortsword 1d6
 [J]Diary
@@ -15,10 +16,12 @@
 [G]432gp
 [G]300pp test credit
 [J]Zandalas Artwork
+[M]Fireball (Lv1)
 [E]Thieves tools
 [J]Carved wooden knight
 [W]Trident 1d8
 [J]Silver necklace w5gp
+[M]Magic missile (Lv4)
 [W]Tattermans razor 1d4+1
 [S]HP 19
 [A]Potion of healing d8+1
