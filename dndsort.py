@@ -13,6 +13,7 @@ def weap_sort(weapons):
             damage = eval(damage.string[damage.start()+rmdflag:damage.end()].replace('d','*')) #Turn damage formula into equation
         weapons[x] = [damage,weapons[x]] #Tag weapon with it's max damage
     weapons = sorted(weapons)[::-1]
+    #Remove tags
     for x in range(len(weapons)):
         weapons[x] = weapons[x][1]
     return weapons
@@ -34,11 +35,27 @@ def gold_sort(gold):
         else:
             gold[x] = [None,gold[x]]
     gold = sorted(gold)[::-1]
+    #Remove tags
     for x in range(len(gold)):
         gold[x] = gold[x][1]
     return gold
 
-filename = 'demo.txt' #Replace this with your char file 
+def spell_sort(spells):
+    for x in range(len(spells)):
+        #Try both forms of level tags
+        level = re.search('\([lL]evel \d+\)',spells[x])
+        level = level if level != None else re.search('\([lL]v ?\d+\)',spells[x])
+        if level != None:
+            spells[x] = [int(re.sub('\D+','',level.string[level.start():level.end()])),spells[x]]
+        else:
+            spells[x] = [None,spells[x]]
+    spells = sorted(spells)
+    #Remove tags
+    for x in range(len(spells)):
+        spells[x] = spells[x][1]
+    return spells
+
+filename = 'ronan.txt' #Replace this with your char file 
 
 #Categories
 weap = ['WEAPONS/DAMAGE:\n'] #[W]
@@ -54,7 +71,7 @@ junk = ['JUNK/MISC:\n'] #[J]
 
 rates = [1,10,50,100,1000]
 
-categories = [['S',stat],['G',gold,gold_sort],['W',weap,weap_sort],['E',equip],['A',alch],['M',magic],['J',junk]]
+categories = [['S',stat],['G',gold,gold_sort],['W',weap,weap_sort],['E',equip],['A',alch],['M',magic,spell_sort],['J',junk]]
 charfile = open(filename).readlines()
 
 #Read file
