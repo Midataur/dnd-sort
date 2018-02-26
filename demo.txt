@@ -10,9 +10,10 @@
 [W]Shortsword 1d6
 [J]Diary
 [E]Leather Armour
-[G]20 alchemy gp
+[G]20gp alchemy store credit
 [E]Backpack
-[G]432 gp
+[G]432gp
+[G]300pp test credit
 [J]Zandalas Artwork
 [E]Thieves tools
 [J]Carved wooden knight
