@@ -28,3 +28,4 @@ label with [?] at the start of the line where ? is the letter of the item's cate
 
 * Weapons will sort by damage if formula is given. Formulas should look like '2d4+1' where the initial number before the d and the trailing addition are optional.
 * Gold and valuable items will sort by value if values are given in the format '423gp 56sp 2cp' where the p is optional. Supported currency types are cp (copper), sp (silver), ep (electrum), gp (gold) and pp (platinum). Exchange rates are dnd5e by default. 
+* Spells are sorted by level. Level can be given in 1 of 2 formats: '(Level 12)' where the case doesn't matter for the L or '(Lv 4)' where the case doesn't matter for the L and the space is optional.
