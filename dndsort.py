@@ -58,13 +58,13 @@ def spell_sort(spells):
 filename = 'ronan.txt' #Replace this with your char file 
 
 #Categories
-weap = ['WEAPONS/DAMAGE:\n'] #[W]
-stat = ['STATS AND STATUSES:\n'] #[S]
-gold = ['GOLD/VALUBLE THINGS:\n'] #[G]
-equip = ['EQUIPMENT:\n'] #[E]
-alch = ['ALCHEMY:\n'] #[A]
-magic = ['MAGIC/SPELLS:\n'] #[M]
-junk = ['JUNK/MISC:\n'] #[J]
+weap = ['WEAPONS/DAMAGE:'] #[W]
+stat = ['STATS AND STATUSES:'] #[S]
+gold = ['GOLD/VALUBLE THINGS:'] #[G]
+equip = ['EQUIPMENT:'] #[E]
+alch = ['ALCHEMY:'] #[A]
+magic = ['MAGIC/SPELLS:'] #[M]
+junk = ['JUNK/MISC:'] #[J]
 
 #Value of each currency denomenation in copper. Defaults to dnd5e.
 #Order is copper, silver, electrum, gold, platinum.
@@ -79,7 +79,7 @@ print 'Opening File...'
 for x in charfile:
     for y in categories:
         if '['+y[0]+']' in x:
-            y[1].append(x)
+            y[1].append(x.strip())
 
 #Sort
 print 'Sorting...'
@@ -95,9 +95,10 @@ for x in categories:
 print 'Writing to file...'
 open(filename,'w').write('')
 for x in categories:
-    x[1].append('\n')
     for y in x[1]:
         open(filename,'a').write(y)
+        open(filename,'a').write('\n')
+    open(filename,'a').write('\n')
 
 #Add 'NEW ITEMS:' field
 open(filename,'a').write('NEW ITEMS:\n')
