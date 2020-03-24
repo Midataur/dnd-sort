@@ -1,6 +1,6 @@
 # dnd-sort
 
-## A sorting tool for text based dnd inventories
+## A Python 2.7 tool for sorting text based dnd inventories 
 
 ### Features:
 
